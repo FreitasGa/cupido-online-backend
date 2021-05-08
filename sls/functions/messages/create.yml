@@ -1,0 +1,6 @@
+Create:
+  handler: src/functions/messages/create.main
+  events:
+    - http:
+        method: post
+        path: message

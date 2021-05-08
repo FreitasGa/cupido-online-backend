@@ -1,0 +1,6 @@
+List:
+  handler: src/functions/messages/list.main
+  events:
+    - http:
+        method: get
+        path: message/{user_id}

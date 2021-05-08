@@ -1,0 +1,8 @@
+{
+  "body": {
+    "user_id": "12345",
+    "crush_name": "jane doe",
+    "crush_email": "janedoe@aws.com",
+    "content": "lorem ipsum dolum sit amet"
+  }
+}

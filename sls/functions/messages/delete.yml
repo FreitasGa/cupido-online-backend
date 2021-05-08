@@ -1,0 +1,6 @@
+Delete:
+  handler: src/functions/messages/delete.main
+  events:
+    - http:
+        method: post
+        path: message/{user_id}/{id}
