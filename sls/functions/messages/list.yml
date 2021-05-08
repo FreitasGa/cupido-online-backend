@@ -3,4 +3,6 @@ List:
   events:
     - http:
         method: get
-        path: message/{user_id}
+        path: message
+        authorizer: aws_iam
+        cors: true

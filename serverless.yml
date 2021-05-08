@@ -34,3 +34,6 @@ functions:
   - ${file(sls/functions/messages/create.yml)}
   - ${file(sls/functions/messages/delete.yml)}
   - ${file(sls/functions/messages/list.yml)}
+
+resources:
+  - ${file(sls/resources/api-gateway-errors.yml)}

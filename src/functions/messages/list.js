@@ -6,7 +6,7 @@ export const main = handler(async (event, context) => {
     TableName: process.env.messageTableName,
     KeyConditionExpression: "user_id = :user_id",
     ExpressionAttributeValues: {
-      ":user_id": event.pathParameters.user_id,
+      ":user_id": event.requestContext.identity.cognitoIdentityId,
     },
   };
   const result = await dynamoDb.query(params);
