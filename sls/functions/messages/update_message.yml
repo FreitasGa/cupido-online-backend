@@ -1,0 +1,8 @@
+update_message:
+  handler: src/functions/messages/update_message.main
+  events:
+    - http:
+        method: put
+        path: message/{id}/match/{match}
+        authorizer: aws_iam
+        cors: true

@@ -1,8 +1,8 @@
-Create:
-  handler: src/functions/messages/create.main
+send_email:
+  handler: src/functions/email/send_email.main
   events:
     - http:
         method: post
-        path: message
+        path: email
         authorizer: aws_iam
         cors: true

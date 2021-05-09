@@ -13,6 +13,7 @@ export const main = handler(async (event, context) => {
       crush_name,
       crush_email,
       content,
+      is_match: false,
       created_at: Date.now(),
     },
   };

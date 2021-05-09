@@ -1,6 +1,7 @@
 {
   "pathParameters": {
-    "id": "a331fe1d-4205-4cf9-b061-0f06964cfb64"
+    "id": "8aec365a-69d3-4e9c-ab03-8478a71a1044",
+    "is_match": true
   },
   "requestContext": {
     "identity": {

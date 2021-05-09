@@ -1,5 +1,5 @@
-Delete:
-  handler: src/functions/messages/delete.main
+delete_message:
+  handler: src/functions/messages/delete_message.main
   events:
     - http:
         method: delete

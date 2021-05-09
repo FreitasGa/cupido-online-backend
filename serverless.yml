@@ -16,7 +16,6 @@ provider:
   stage: prod
   region: sa-east-1
   environment:
-    userTableName: Users
     messageTableName: Messages
   iamRoleStatements:
     - Effect: Allow
@@ -31,9 +30,11 @@ provider:
       Resource: "arn:aws:dynamodb:sa-east-1:*:*"
 
 functions:
-  - ${file(sls/functions/messages/create.yml)}
-  - ${file(sls/functions/messages/delete.yml)}
-  - ${file(sls/functions/messages/list.yml)}
+  - ${file(sls/functions/messages/create_message.yml)}
+  - ${file(sls/functions/messages/delete_message.yml)}
+  - ${file(sls/functions/messages/list_message.yml)}
+  - ${file(sls/functions/messages/update_message.yml)}
+  - ${file(sls/functions/email/send_email.yml)}
 
 resources:
   - ${file(sls/resources/api-gateway-errors.yml)}

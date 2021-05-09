@@ -1,5 +1,5 @@
-List:
-  handler: src/functions/messages/list.main
+list_message:
+  handler: src/functions/messages/list_message.main
   events:
     - http:
         method: get

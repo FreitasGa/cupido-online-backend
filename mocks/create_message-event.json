@@ -1,7 +1,7 @@
 {
   "body": {
     "crush_name": "jane doe",
-    "crush_email": "janedoe@aws.com",
+    "crush_email": "janedoe@example.com",
     "content": "lorem ipsum dolum sit amet"
   },
   "requestContext": {
