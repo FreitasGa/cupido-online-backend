@@ -35,6 +35,8 @@ functions:
   - ${file(sls/functions/messages/list_message.yml)}
   - ${file(sls/functions/messages/update_message.yml)}
   - ${file(sls/functions/email/send_email.yml)}
+  - ${file(sls/functions/email/send_email_auth.yml)}
+
 
 resources:
   - ${file(sls/resources/api-gateway-errors.yml)}

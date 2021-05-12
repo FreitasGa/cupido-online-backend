@@ -1,0 +1,8 @@
+send_email_auth:
+  handler: src/functions/email/send_email_auth.main
+  events:
+    - http:
+        method: post
+        path: auth/email
+        authorizer: aws_iam
+        cors: true

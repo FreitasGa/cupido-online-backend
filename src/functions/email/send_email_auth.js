@@ -2,7 +2,7 @@ import handler from "../../../libs/handler-lib";
 import nodemailer from "nodemailer";
 
 export const main = handler(async (event, context) => {
-  const { crush_name, crush_email, content } =
+  const { crush_name, crush_email, content, id } =
     typeof event.body === "string" ? JSON.parse(event.body) : event.body;
 
   const transporter = nodemailer.createTransport({
@@ -47,6 +47,17 @@ export const main = handler(async (event, context) => {
                 ">
               <span style="font-size: 1rem">${content}</span>
             </div>
+            <br />
+            <a href="https://www.google.com/${id}" style="
+                  margin-bottom: 10px;
+                  padding: 8px 24px;
+                  background-color: #d75b79;
+                  text-decoration: none;
+                  font-size: 20px;
+                  font-weight: bold;
+                  border-radius: 5px;
+                  color: white;
+                ">Dar Match</a>
             <br />
             <br />
             <span style="font-size: 16px;">

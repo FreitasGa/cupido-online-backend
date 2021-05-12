@@ -3,6 +3,6 @@ create_message:
   events:
     - http:
         method: post
-        path: message/
+        path: message
         authorizer: aws_iam
         cors: true
