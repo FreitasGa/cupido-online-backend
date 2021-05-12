@@ -4,5 +4,4 @@ update_message:
     - http:
         method: put
         path: message/{id}/match/{match}
-        authorizer: aws_iam
         cors: true
