@@ -3,7 +3,8 @@ import handler from "../../../libs/handler-lib";
 import dynamoDb from "../../../libs/dynamodb-lib";
 
 export const main = handler(async (event, context) => {
-  const { crush_name, crush_email, content } = event.body;
+  const { crush_name, crush_email, content } =
+    typeof event.body === "string" ? JSON.parse(event.body) : event.body;
 
   const params = {
     TableName: process.env.messageTableName,
