@@ -9,3 +9,4 @@ O projeto foi desenvolvido utilizando:
 
 - NodeJs
 - Serverless Framework
+- Nodemailer
