@@ -2,7 +2,7 @@
 
 Backend da plataforma Cupido Online
 
-## Tecnologias utilizadas
+## 🔧 Tecnologias utilizadas
 
 O projeto foi desenvolvido utilizando:
 
