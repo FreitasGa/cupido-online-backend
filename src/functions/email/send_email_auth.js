@@ -48,7 +48,7 @@ export const main = handler(async (event, context) => {
               <span style="font-size: 1rem">${content}</span>
             </div>
             <br />
-            <a href="https://www.google.com/${id}" style="
+            <a href="https://cupido-online.vercel.app/messages/${id}/match/${true}" style="
                   margin-bottom: 10px;
                   padding: 8px 24px;
                   background-color: #d75b79;
