@@ -1,6 +1,6 @@
 # Backend Cupido Online
 
-Backend da plataforma Cupido Online.
+Backend da plataforma Cupido Online.  
 Integra uma API de gerenciamento de mensagens e de envio de emails.
 
 ## ⚙️ Tecnologias utilizadas
