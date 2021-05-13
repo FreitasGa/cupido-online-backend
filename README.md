@@ -1,11 +1,11 @@
 # Backend Cupido Online
 
-Backend da plataforma Cupido Online
+Backend da plataforma Cupido Online.
+Integra uma API de gerenciamento de mensagens e de envio de emails.
 
-## 🔧 Tecnologias utilizadas
+## ⚙️ Tecnologias utilizadas
 
 O projeto foi desenvolvido utilizando:
 
-- JavaScript
 - NodeJs
 - Serverless Framework
