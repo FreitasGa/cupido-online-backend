@@ -3,5 +3,5 @@ update_message:
   events:
     - http:
         method: put
-        path: message/{id}/match/{match}
+        path: message/{id}/match/{user_id}
         cors: true

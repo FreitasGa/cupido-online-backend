@@ -2,7 +2,7 @@ import handler from "../../../libs/handler-lib";
 import nodemailer from "nodemailer";
 
 export const main = handler(async (event, context) => {
-  const { crush_name, crush_email, content, id } =
+  const { crush_name, crush_email, content, id, user_id } =
     typeof event.body === "string" ? JSON.parse(event.body) : event.body;
 
   const transporter = nodemailer.createTransport({
@@ -48,7 +48,7 @@ export const main = handler(async (event, context) => {
               <span style="font-size: 1rem">${content}</span>
             </div>
             <br />
-            <a href="https://cupido-online.vercel.app/messages/${id}/match/${true}" style="
+            <a href="https://cupido-online.vercel.app/messages/${id}/match/${user_id}" style="
                   margin-bottom: 10px;
                   padding: 8px 24px;
                   background-color: #d75b79;

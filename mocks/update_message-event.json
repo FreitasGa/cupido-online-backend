@@ -1,11 +1,6 @@
 {
   "pathParameters": {
     "id": "8aec365a-69d3-4e9c-ab03-8478a71a1044",
-    "is_match": true
-  },
-  "requestContext": {
-    "identity": {
-      "cognitoIdentityId": "USER-SUB-1234"
-    }
+    "user_id": "asdas"
   }
 }
